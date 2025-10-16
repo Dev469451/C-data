@@ -1,0 +1,87 @@
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// class Students {
+// public:
+//     string name;
+//     int roll_no;
+//     bool scholarship;
+// };
+
+// int main() {
+//     Students s1;
+//     s1.name = "Dev Kumar";
+//     s1.roll_no = 22;
+//     s1.scholarship = true;
+
+//     cout << s1.name << endl;
+//     cout << s1.roll_no << endl;
+//     cout << s1.scholarship ? "Yes" : "No" << endl;
+
+//     return 0;
+// }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// class Students {
+//     public:
+//     string name;
+//     int age;
+//     bool scholarship;
+    
+// };
+
+// int main() {
+//     Students s1;
+//     s1.name = "Dev Kumar";
+//     s1.age = 22;
+//     s1.scholarship = false;
+    
+//      Students s2;
+//     s2.name = "Guddu Kumar";
+//     s2.age = 32;
+//     s2.scholarship = true;
+
+//     cout << s1.name << endl;
+//     cout<<s2.name;
+   
+
+//     return 0;
+// }
+
+#include <iostream>
+using namespace std;
+
+class Student {
+public:
+    int RollNo;
+    string name;
+    // bool scholarship; // fixed spelling
+
+    Student(){
+        cout<< "Constructor ran"<<endl;
+    }
+    void getname(){
+        cout<< "Enter name: " << name << endl;
+    }
+
+};
+
+int main() {
+    Student Sahil;
+    Sahil.RollNo = 101;
+    Sahil.name = "Sahil";
+   
+
+    Student Dev;
+    Dev.RollNo = 102;
+    Dev.name = "Dev";
+
+    Sahil.getname();
+    Dev.getname();
+    Student John;
+    John.getname(); 
+
+    return 0;
+}
