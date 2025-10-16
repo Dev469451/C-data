@@ -1,0 +1,70 @@
+//*"-date-"* = 15 -10-20025  
+
+//  **.SORTING .**
+// 1.Iterative(loops)
+// 2.Recursive(rec.)
+
+// #. INTERATIVE
+// ~.Bubble
+// ~.Insertion
+// ~.Selection
+
+// #.RECURSION
+// ~.Merge short
+// ~.Quick short
+
+
+// #. Bubble sort .#
+ 
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// int main(){
+//     int n=5;
+//     int arr[n] = {5,4,3,2,1};
+//     cout<< "initial array is : ";
+//     for(int i=0;i<n;i++)cout<<arr[i]<< " ";
+    
+//     for(int i=0;i<n;i++){
+//         for(int j=0;j<n;j++){
+//             if(arr[j]>arr[i]){
+//                 swap(arr[j],arr[i]);
+//             }
+//         }
+//     }
+//     cout<<endl;
+//     cout<< "Sorted array is : ";
+//     for(int i=0;i<n;i++)cout<<arr[i]<<" ";
+    
+//     return 0;
+// }
+
+// reverse order
+
+
+
+
+//  deassinding order
+
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// int main(){
+//     int n=5;
+//     int arr[n] = {5,4,3,2,1};
+//     cout<< "initial array is : ";
+//     for(int i=0;i<n;i++)cout<<arr[i]<< " ";
+    
+//     for(int i=0;i<n;i++){
+//         for(int j=0;j<n;j++){
+//             if(arr[j]<arr[i]){
+//                 swap(arr[j],arr[i]);
+//             }
+//         }
+//     }
+//     cout<<endl;
+//     cout<< "Sorted array is : ";
+//     for(int i=0;i<n;i++)cout<<arr[i]<<" ";
+    
+//     return 0;
+// }
