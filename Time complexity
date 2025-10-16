@@ -1,0 +1,33 @@
+// #### Time Complexity ####
+#include <iostream>
+using namespace std;
+
+class Animal {
+public:
+    int legs;
+    string colour;
+    string name;
+
+    Animal(int legs, string colour, string name) {
+        this->legs = legs;
+        this->colour = colour;
+        this->name = name;
+    }
+
+    void display() {
+        cout << legs << " " << name << " " << colour << endl;
+    }
+};
+
+int main() {
+    Animal cat(4, "black", "lily");
+    cat.display();
+
+    Animal dog(4, "brown", "zoo-zoo");
+    dog.display();
+
+    Animal horse(4, "white", "badal");
+    horse.display();
+
+    return 0;
+}
