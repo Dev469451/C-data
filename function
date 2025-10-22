@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int add(int x , int y, int z){
+    
+    return x+y+z;
+}
+
+int multiply(int a, int b, int c){
+    //  <<a*b*c<<endl;
+    return a*b*c;
+    
+}
+
+int multiply (int x, int y){
+    return x*y;
+}
+
+int main(){
+    
+    // int value = add(2,3);
+    int value2 = add(2,3,4);
+    cout<< value2 << endl;
+    
+    cout<<multiply(2,3,4) << " " << endl;
+    cout<<multiply(2,3);
+    
+    return 0;
+}
