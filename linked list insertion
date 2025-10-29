@@ -1,0 +1,62 @@
+#include<iostream>
+using namespace std;
+
+   struct Node{
+       int data;
+       Node* next;
+       
+       Node(int a){
+           data = a;
+           next = NULL;
+       }
+   };
+   
+  void printLL(Node* head){
+      Node* p = head;
+      
+      while(p!= NULL){
+          cout << p-> data << " ";
+          p = p->next;
+      }
+  }
+   
+   void insertionInLL(Node* head, int pos , int val){
+        Node* p = head;
+        Node* q = nullptr;
+   
+       for(int i=1;i<pos;i++){
+           q=p;
+           p = p-> next;
+       }
+       
+       Node* newNode = new Node(val);
+       newNode-> next = p;
+       q-> next = newNode;
+       
+}
+  
+  void insertionHead (Node* head, int val){
+      Node* newNode = new Node(val);
+      newNode -> next = head;
+      head = newNode;
+  }
+  
+int main(){
+    
+     Node* head = new Node(12);
+     head ->next = new Node(22);
+     head ->next->next = new Node(32);
+     head ->next->next->next = new Node(42);
+     head ->next->next->next->next = new Node(52);
+     
+     printLL(head);
+     int pos = 3;
+     int value = 100;
+     insertionInLL(head, pos, value);
+     cout << endl;
+     
+     printLL(head);
+     
+     
+    return 0;
+}
