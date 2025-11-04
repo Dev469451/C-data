@@ -1,0 +1,127 @@
+// arr = [ [3, 1, 5, 6],
+        // [4, 2, 1, 3],
+        // [5, 1, 3, 7],
+        // [9, 8, 1, 8] ]
+
+// 1Q-> Print Primary Diagonal
+// --> {3, 2, 3, 8}
+ 
+//  2Q-> Print s.diagonal 
+ // -->input{ 6 1 1 9}  same code
+
+// 3Q-> Transpose
+
+// 4Q->Print row-wise max
+
+// 5Q-> Print coloum-wise max
+
+// 6Q-> Print zig-zag matrix [Coloum-wise]
+// --> {3 4 5 9 1 2 1 8 5 1 3 1 6 3 7 8 }
+
+// 7Q-> Print zig-zag matrix [Row-wise] 
+
+//  8Q-> Print spiral matrix 
+// --> { 3 1 5 6 3 7 8 1 8 9 5 4 2 1 3 1 }
+
+
+// 1.solution:-
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[4][4] = {
+        {3, 1, 5, 6},
+        {4, 2, 1, 3},
+        {5, 1, 3, 7},
+        {9, 8, 1, 8}
+    };
+
+    // cout << "Primary Diagonal: ";
+    // for (int i = 0; i < 4; i++) {
+    //     cout << arr[i][i] << " ";
+    // }
+    
+    // 2.solution:-
+    
+    // cout << "Secondary Diagonal: ";
+    // for (int i = 0; i < 4; i++) {
+    //     cout << arr[i][3 - i] << " ";
+    // }
+
+// 3.solution:-
+
+//  int transpose[4][4];
+
+//     // Transpose logic
+//     for (int i = 0; i < 4; i++) {
+//         for (int j = 0; j < 4; j++) {
+//             transpose[j][i] = arr[i][j];
+//         }
+//     }
+
+//     // Print transposed matrix
+//     cout << "Transposed Matrix:\n";
+//     for (int i = 0; i < 4; i++) {
+//         for (int j = 0; j < 4; j++) {
+//             cout << transpose[i][j] << " ";
+//         }
+//         cout << endl;
+//     }
+
+// 4.solution:- 
+
+// cout << "Row-wise Maximums: ";
+//     for (int i = 0; i < 4; i++) {
+//         int maxVal = arr[i][0];
+//         for (int j = 1; j < 4; j++) {
+//             if (arr[i][j] > maxVal)
+//                 maxVal = arr[i][j];
+//         }
+//         cout << maxVal << " ";
+//     }
+
+// 5.solution:-
+
+// cout << "Row-wise Maximums: ";
+//     for (int j = 0; j < 4; j++) {
+//         int maxVal = arr[0][j];
+//         for (int i = 1; i < 4; i++) {
+//             if (arr[i][j] > maxVal)
+//                 maxVal = arr[i][j];
+//         }
+//         cout << maxVal << " ";
+//     }
+
+
+// 6.solution:-
+
+// for (int col = 0; col < 4; col++) {
+//         if (col % 2 == 0) {
+//             // Top to bottom
+//             for (int row = 0; row < 4; row++)
+//                 cout << arr[row][col] << " ";
+//         } else {
+//             // Bottom to top
+//             for (int row = 3; row >= 0; row--)
+//                 cout << arr[row][col] << " ";
+//         }
+//     }
+
+// 7.solution:- 
+
+ for (int row = 0; row < 4; row++) {
+        if (row % 2 == 0) {
+            // Left to right
+            for (int col = 0; col < 4; col++)
+                cout << arr[row][col] << " ";
+        } else {
+            // Right to left
+            for (int col = 3; col >= 0; col--)
+                cout << arr[row][col] << " ";
+        }
+    }
+
+// 8.solution:-
+
+    return 0;
+}
